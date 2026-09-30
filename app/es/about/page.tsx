@@ -15,7 +15,7 @@ export default function AboutEs() {
       <div className="about-heading">
         <p className="eyebrow">SOBRE SOL & SAGE</p>
         <h1>Belleza que se siente<br/><em>como tuya.</em></h1>
-        <p className="lead">Un estudio boutique moderno y ficticio, creado alrededor del estilo personal, la conversación atenta y la calidez de Santa Barbara.</p>
+        <p className="lead">Un estudio boutique moderno y ficticio, creado en torno al estilo personal, la atención cercana y la calidez de Santa Barbara.</p>
       </div>
       <div className="about-photo">
         <Image src="/images/gallery-06.webp" alt="Clienta disfrutando una experiencia de belleza personalizada" fill priority sizes="(max-width: 800px) 100vw, 52vw"/>
@@ -26,21 +26,21 @@ export default function AboutEs() {
       <p className="eyebrow">NUESTRA HISTORIA</p>
       <div>
         <h2>Una manera más tranquila de vivir la belleza.</h2>
-        <p>Sol & Sage fue imaginado como un espacio donde la belleza moderna se siente personal, no impuesta. El concepto comienza escuchando: comprendiendo tus referencias, tu rutina y cómo quieres sentirte al salir de la silla.</p>
-        <p>Desde el cabello cotidiano hasta color, maquillaje y eventos importantes, cada servicio se plantea como una colaboración. La intención es crear un look pulido, llevable y conectado contigo.</p>
+        <p>Sol & Sage fue imaginado como un espacio donde la belleza moderna se siente personal, nunca impuesta. Todo comienza escuchándote: entendiendo tus referencias, tu rutina y cómo quieres sentirte al salir de la silla.</p>
+        <p>Desde el cuidado diario del cabello hasta coloración, maquillaje y eventos importantes, cada servicio se plantea como una colaboración. La intención es crear un estilo cuidado, fácil de llevar y auténticamente tuyo.</p>
       </div>
     </section>
 
     <section className="about-values">
       <article><span>01</span><h3>Servicio personalizado</h3><p>Cada cita comienza con tus objetivos, preferencias, historial del cabello y el mantenimiento que sea realista para ti.</p></article>
-      <article><span>02</span><h3>Belleza con intención</h3><p>Preferimos decisiones cuidadosas y conversaciones claras, sin tendencias genéricas ni promesas innecesarias.</p></article>
-      <article><span>03</span><h3>Una experiencia acogedora</h3><p>El estudio se imagina cálido, tranquilo y accesible: un lugar donde puedes preguntar y tu estilo personal guía el proceso.</p></article>
+      <article><span>02</span><h3>Belleza con intención</h3><p>Preferimos decisiones cuidadosas y conversaciones claras, sin imponer tendencias ni hacer promesas innecesarias.</p></article>
+      <article><span>03</span><h3>Una experiencia acogedora</h3><p>El estudio se imagina cálido, tranquilo y cercano: un lugar donde tus preguntas son bienvenidas y tu estilo guía el proceso.</p></article>
     </section>
 
     <section className="about-cta">
       <p className="eyebrow">ENCUENTRA TU PUNTO DE PARTIDA</p>
       <h2>Ven como eres.<br/><em>Crearemos el resto juntos.</em></h2>
-      <div className="actions"><Link className="button" href="/es/servicios">Ver servicios</Link><Link className="text-link" href="/es/agendar">Agenda una Cita →</Link></div>
+      <div className="actions"><Link className="button" href="/es/servicios">Ver servicios</Link><Link className="text-link" href="/es/agendar">Agenda una cita →</Link></div>
     </section>
   </main>
 }
