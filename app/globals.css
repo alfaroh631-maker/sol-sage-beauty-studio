@@ -45,3 +45,112 @@
 .contact-page{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);min-height:760px}.contact-intro{padding:10vw 6vw 9vw 8vw;background:var(--beige)}.contact-intro h1{font-size:clamp(52px,6vw,88px)}.contact-intro .lead{margin:34px 0 50px}.contact-details{display:grid;gap:20px;border-top:1px solid #b9aa9d;padding-top:28px}.contact-details div{display:grid;grid-template-columns:85px 1fr;align-items:start}.contact-details span{font-size:9px;letter-spacing:.16em;color:#806f63}.contact-details a,.contact-details p{font-size:13px;margin:0}.contact-form-wrap{padding:8vw 7vw}.demo-banner{padding:20px;border:1px solid #c9b9ad;background:#eee5dc;margin-bottom:42px}.demo-banner span{display:block;font-size:9px;letter-spacing:.16em;color:var(--rose);margin-bottom:8px}.demo-banner p{font-size:12px;line-height:1.5;color:#685e57;margin:0}.contact-page .demo-form{max-width:none;grid-template-columns:repeat(2,1fr);gap:25px 30px}.contact-page .field{display:grid}.contact-page .field-wide{grid-column:1/-1}.contact-page .demo-form label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#7c6e64}.contact-page .demo-form input,.contact-page .demo-form select,.contact-page .demo-form textarea{width:100%}.contact-page .demo-form textarea{resize:vertical}.contact-page .demo-form button{grid-column:1/-1;cursor:not-allowed}
 @media(max-width:800px){.about-hero,.contact-page{grid-template-columns:1fr}.about-heading{padding:85px 8vw 70px}.about-photo{min-height:480px}.about-story{grid-template-columns:1fr;padding:80px 8vw}.about-values{grid-template-columns:1fr;padding:70px 8vw}.about-values article{padding:32px}.about-values h3{margin-top:30px}.about-cta{padding:85px 8vw}.reviews-intro,.faq-intro{padding:85px 8vw 60px}.review-grid{padding-bottom:75px}.review-cta,.book-alternative{align-items:flex-start;flex-direction:column;padding:75px 8vw}.faq-intro,.book-intro{grid-template-columns:1fr;align-items:start}.faq-intro .lead,.book-intro .lead{margin-top:30px}.faq-page>.faq-list{margin-bottom:75px}.book-intro{padding:85px 8vw 65px}.calendar-demo{margin:0 5vw 75px}.calendar-demo-head{align-items:flex-start;gap:18px}.calendar-demo-head>span{max-width:140px;text-align:right;line-height:1.4}.contact-intro{padding:85px 8vw 70px}.contact-form-wrap{padding:70px 8vw}}
 @media(max-width:600px){.about-photo{min-height:380px}.review-grid{grid-template-columns:1fr}.review-grid blockquote{padding:38px 0}.review-grid blockquote:nth-child(odd){border-right:0}.faq-page .faq-list summary{grid-template-columns:38px 1fr 20px;gap:8px}.faq-page .faq-question{font-size:19px}.faq-page .faq-list details>p{margin:0 28px 26px 46px}.calendar-demo-head{display:block}.calendar-demo-head>span{display:block;max-width:none;text-align:left;margin-top:12px}.calendar-preview{padding:22px 18px}.calendar-preview>div:first-child,.calendar-preview>div:last-child{gap:5px}.calendar-message{padding:45px 8vw}.contact-page .demo-form{grid-template-columns:1fr}.contact-page .field-wide,.contact-page .demo-form button{grid-column:auto}.contact-details div{grid-template-columns:70px 1fr}.contact-details a{word-break:break-word}}
+
+/* Prompt 7: focused mobile usability and responsive polish. */
+html,body{max-width:100%;overflow-x:hidden}.mobile-book{display:none}
+@media(max-width:850px){
+  .site-header{padding:0 5vw;gap:12px;z-index:30}
+  .site-header nav.mobile-open{top:74px;z-index:30;max-height:calc(100vh - 74px);overflow-y:auto;padding:18px 6vw 28px;gap:4px;box-shadow:0 18px 35px rgba(41,38,36,.1)}
+  .site-header nav.mobile-open>a,.site-header nav.mobile-open .nav-services>button{display:flex;align-items:center;min-height:46px;width:100%;font-size:15px}
+  .site-header nav.mobile-open .nav-services>button{justify-content:space-between;text-align:left}
+  .services-dropdown{padding:4px 0 10px 16px}
+  .services-dropdown.show{gap:0}
+  .services-dropdown a{display:flex!important;align-items:center;min-height:43px;font-size:13px;border-bottom:1px solid rgba(207,196,185,.65)}
+  .services-dropdown a:first-child{padding-bottom:0}
+  .site-header nav.mobile-open .mobile-book{display:flex;justify-content:center;margin-top:14px;padding:0 18px;background:var(--ink);color:#fff;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+  .language-switch,.menu-toggle{display:flex;align-items:center;justify-content:center;min-height:44px;min-width:44px}
+  .menu-toggle{padding:0 4px}
+  .button,.text-link{min-height:44px}
+  .button{display:inline-flex;align-items:center;justify-content:center}
+  .text-link{display:inline-flex;align-items:center}
+}
+@media(max-width:700px){
+  .header-book{display:none!important}
+  .site-header .logo{font-size:12px;white-space:nowrap}
+  .site-header .logo span{font-size:6px}
+  .header-actions{gap:3px}
+  .language-switch{font-size:10px;white-space:nowrap}
+  .hero-copy{padding:70px 6vw 52px}
+  .hero h1{font-size:clamp(46px,13.5vw,58px);line-height:.98;margin-bottom:24px}
+  .hero .lead{font-size:15px;line-height:1.65}
+  .hero .actions{display:grid;grid-template-columns:1fr;align-items:start;gap:8px;margin-top:30px}
+  .hero .actions .button{width:100%;margin-bottom:4px}
+  .hero .actions .text-link{width:max-content;max-width:100%}
+  .hero-image{height:360px;background-position:center 45%}
+  .image-label{left:6vw;bottom:20px}
+  .intro{padding:72px 6vw}
+  .intro h2,.section-head h2,.feature h2,.cta h2{font-size:clamp(36px,10.5vw,48px)}
+  .services,.home-gallery,.process,.home-reviews,.home-faq{padding:68px 6vw}
+  .section-head{margin-bottom:28px}
+  .service-card{min-height:158px;padding:18px 14px}
+  .service-card h3{font-size:21px;margin-top:32px;padding-right:12px}
+  .service-card b{right:14px;bottom:14px}
+  .mini-gallery{gap:8px}
+  .mini-gallery a{height:190px}
+  .mini-gallery a:nth-child(2n){height:230px}
+  .feature-image{height:360px;background-position:center}
+  .feature-copy{padding:65px 6vw}
+  .home-panels article{padding:66px 6vw}
+  .process-grid h3{margin-top:26px;font-size:26px}
+  .cta{padding:82px 6vw}
+  .inner{padding:70px 6vw}
+  .inner h1{font-size:clamp(46px,13vw,58px);line-height:.98;margin-bottom:45px}
+  .service-list a{min-height:76px;padding:18px 0}
+  .service-list strong{font-size:23px;line-height:1.12}
+  .gallery-grid{gap:8px}
+  .gallery-tile,.gallery-tile:nth-child(n){height:190px}
+  .gallery-tile:nth-child(1),.gallery-tile:nth-child(6),.gallery-tile:nth-child(11){grid-column:1/-1;height:250px}
+  .gallery-tile:nth-child(2n){height:225px}
+  .service-detail{padding-top:58px}
+  .service-heading,.layout-editorial .service-heading{padding:58px 6vw 52px}
+  .service-heading h1{font-size:clamp(44px,12.5vw,56px);line-height:.98;margin-bottom:22px}
+  .service-hero-image,.layout-editorial .service-hero-image{height:360px;min-height:360px}
+  .layout-immersive .service-hero-image{height:455px}
+  .layout-immersive .service-heading{left:4vw;bottom:4vw;width:92%;padding:24px 22px}
+  .service-focus,.service-faq{padding:66px 0 54px}
+  .service-focus h2,.service-faq h2,.service-cta h2{font-size:clamp(34px,9.5vw,46px);margin-bottom:34px}
+  .service-process{padding:64px 6vw}
+  .service-points div,.service-process-grid>div{padding:20px 0}
+  .service-process-grid h3{margin-top:25px;font-size:27px}
+  .service-questions{gap:0;margin-top:38px}
+  .service-faq .service-questions div{padding:22px 0}
+  .service-questions h3{font-size:22px;margin-top:18px}
+  .service-cta{padding:68px 0}
+  .about-page h1,.reviews-page h1,.faq-page h1,.book-page h1,.contact-page h1{font-size:clamp(46px,13vw,58px);line-height:.98}
+  .about-heading,.reviews-intro,.faq-intro,.book-intro,.contact-intro{padding:70px 6vw 58px}
+  .about-photo{min-height:360px}
+  .about-story{padding:68px 6vw}
+  .about-values{padding:58px 6vw}
+  .about-cta{padding:72px 6vw}
+  .about-cta .actions{flex-direction:column;gap:8px}
+  .about-cta .actions .button{width:100%}
+  .review-grid{padding:0 6vw 64px}
+  .review-grid blockquote{font-size:24px;line-height:1.4}
+  .review-cta,.book-alternative{padding:66px 6vw;gap:28px}
+  .review-cta .button,.book-alternative .button{width:100%}
+  .faq-page>.faq-list{margin:0 6vw 68px}
+  .faq-page .faq-list summary{min-height:76px;padding:18px 0}
+  .faq-page .faq-list details>p{font-size:15px;line-height:1.65}
+  .faq-cta{padding:68px 6vw}
+  .calendar-demo{margin:0 4vw 68px}
+  .calendar-demo-head{padding:18px}
+  .calendar-message{padding:42px 6vw 48px}
+  .calendar-message h2{font-size:36px}
+  .contact-form-wrap{padding:60px 6vw}
+  .demo-banner{margin-bottom:30px}
+  .contact-page .demo-form{gap:20px}
+  .demo-form input,.demo-form select,.demo-form textarea{font-size:16px;min-height:48px}
+  .contact-page .demo-form button{width:100%;min-height:48px;white-space:normal;line-height:1.35}
+  footer{padding:48px 6vw}
+  .footer-links{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;margin-top:28px}
+  .footer-links a{display:flex;align-items:center;min-height:44px;overflow-wrap:anywhere}
+}
+@media(max-width:380px){
+  .site-header{padding:0 4vw}
+  .site-header .logo{font-size:10px;letter-spacing:.16em}
+  .site-header .logo span{font-size:5px}
+  .language-switch{font-size:9px;min-width:42px}
+  .menu-toggle{font-size:9px;min-width:40px}
+  .service-card h3{font-size:19px}
+  .footer-links{grid-template-columns:1fr}
+}
