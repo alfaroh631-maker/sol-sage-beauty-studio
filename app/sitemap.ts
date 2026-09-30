@@ -1,0 +1,4 @@
+import type { MetadataRoute } from 'next'
+const enServices=['haircuts-styling','hair-color','highlights-balayage','blowouts','hair-treatments','bridal-special-events','makeup-services']
+const esServices=['cortes-y-peinados','color-de-cabello','luces-y-balayage','brushing','tratamientos-para-el-cabello','novias-y-eventos-especiales','servicios-de-maquillaje']
+export default function sitemap(): MetadataRoute.Sitemap { const base='https://sol-sage-beauty-studio.vercel.app'; const paths=['','services','gallery','about','reviews','faq','contact','book','privacy-policy','terms-of-service','es','es/servicios','es/gallery','es/about','es/reviews','es/faq','es/contacto','es/agendar','es/politica-de-privacidad','es/terminos-de-servicio',...enServices.map(s=>`services/${s}`),...esServices.map(s=>`es/servicios/${s}`)]; return paths.map(path=>({url:`${base}/${path}`,lastModified:new Date()})) }

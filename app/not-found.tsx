@@ -1,0 +1,2 @@
+import Link from 'next/link'
+export default function NotFound(){return <main className="inner"><p className="eyebrow">404 · SOL & SAGE</p><h1>That page took<br/><em>a wrong turn.</em></h1><p className="lead">The page you requested is not part of this studio demo. Return home or explore the services.</p><div className="actions"><Link className="button" href="/">Return Home</Link><Link className="text-link" href="/services">Explore Services →</Link></div></main>}
