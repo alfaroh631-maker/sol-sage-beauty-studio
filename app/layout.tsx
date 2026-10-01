@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import './globals.css'
 import type { Metadata } from 'next'
 import SiteChrome from './components/SiteChrome'
@@ -6,5 +7,5 @@ export const metadata: Metadata = { title: 'Sol & Sage Beauty Studio | Santa Bar
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const schema = { '@context':'https://schema.org', '@type':'BeautySalon', name:'Sol & Sage Beauty Studio', description:'Modern hair and beauty services in Santa Barbara, California.', url:'https://sol-sage-beauty-studio.vercel.app', telephone:'+1-805-555-0174', email:'hello@solandsagebeauty.com', address:{'@type':'PostalAddress', addressLocality:'Santa Barbara', addressRegion:'CA', addressCountry:'US'}, areaServed:'Santa Barbara, California' }
-  return <html lang="en"><body><SiteChrome>{children}</SiteChrome><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /></body></html>
+  return <html lang="en"><body><SiteChrome>{children}</SiteChrome><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /><Script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6abee2d04eeeccd9ba85b93e" strategy="afterInteractive" /></body></html>
 }
